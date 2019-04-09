@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang=""   xmlns:th="http://thymeleaf.org"
+                xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Title Page</title>
+        <title>EventosApp</title>
 
         <!-- Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +18,17 @@
         <![endif]-->
     </head>
     <body>
-        <h1 class="text-center">Página 1</h1>
+        
+        <h1 class="text-center">Cadastro de Eventos</h1>
+
+        <form method="post">
+            Nome: <input type="text" value="" name="nome"/>
+            Local: <input type="text" value="" name="local"/>
+            Data: <input type="text" value="" name="data"/>
+            Hora: <input type="text" value="" name="horario"/>
+
+            <button type="submit">Salvar</button>
+        </form>
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
